@@ -44,7 +44,7 @@ router.post("/", (req, res) => {
     // create new project
     let newProject = new Project({
       name: req.body.name,
-      description: req.body.description,
+      overview: req.body.overview,
       price: req.body.price,
       user: req.body.user,
       image: uniqueFilename,
