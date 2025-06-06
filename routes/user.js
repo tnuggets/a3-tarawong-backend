@@ -80,6 +80,10 @@ router.put("/:id", Utils.authenticateToken, (req, res) => {
         avatar: avatarFilename,
         bio: req.body.bio,
         accessLevel: req.body.accessLevel,
+        pronouns: req.body.pronouns,
+        role: req.body.role,
+        location: req.body.location,
+        skills: req.body.skills,
       })
     })
   } else {

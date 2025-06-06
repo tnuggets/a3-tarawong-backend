@@ -22,6 +22,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    pronouns: {
+      type: String,
+      required: true,
+    },
     avatar: {
       type: String,
     },
@@ -36,6 +40,14 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    role: {
+      type: Number,
+      required: true,
+    },
+    location: {
+      type: String,
+    },
+    skills: [{ type: Schema.ObjectId, ref: "Skill" }],
     // square bracket as it is an array
     favouriteProjects: [{ type: Schema.ObjectId, ref: "Project" }],
   },

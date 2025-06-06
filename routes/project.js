@@ -48,8 +48,8 @@ router.post("/", (req, res) => {
       price: req.body.price,
       user: req.body.user,
       image: uniqueFilename,
-      gender: req.body.gender,
-      length: req.body.length,
+      location: req.body.location,
+      date: req.body.date,
     })
 
     newProject

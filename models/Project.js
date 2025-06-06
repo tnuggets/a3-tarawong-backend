@@ -25,11 +25,11 @@ const projectSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    gender: {
+    location: {
       type: String,
       required: true,
     },
-    length: {
+    date: {
       type: String,
       required: true,
     },
